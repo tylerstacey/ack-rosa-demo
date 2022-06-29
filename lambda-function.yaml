@@ -1,0 +1,9 @@
+apiVersion: lambda.services.k8s.aws/v1alpha1
+kind: Function
+metadata:
+  name: "ack-lambda"
+spec:
+  name: "ack-lambda"
+  role: "arn:aws:iam::660250927410:role/ack-lambda-exec-role"
+  code:
+    zipFile: ./function.zip
